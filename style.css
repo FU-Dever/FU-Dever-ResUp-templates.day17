@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
 *{
     padding: 0px;
     margin: 0px;
@@ -35,6 +37,7 @@ body{
 #wrap-content{
     position: absolute;
     width: 300%;
+    height: 100%;
     left: 0px;
     display: flex;
     animation: customTransfrom 6s linear infinite;
@@ -48,12 +51,15 @@ body{
 img{
     width: 100%;
     transition: .3s ease-in-out;
+    height: 100%;
+    object-fit: cover;
 }
 p{
     position: absolute;
     z-index: 50;
-    font-size: calc(30px + 20*(100vw -320px)/(1650 - 320));
-    font-family: fantasy;
+    /* font-size: calc(30px + 20*(100vw -320px)/(1650 - 320)); */
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
     letter-spacing: 1.5px;
     left: 50%;
     top: 50%;
@@ -83,3 +89,4 @@ p{
 .slide:hover>img{
     transform: scale(1.1);
 }
+
